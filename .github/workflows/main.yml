@@ -3,9 +3,8 @@ name: pipeline1
 
 # trigger
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch
+    
 
 # jobs
 jobs:
