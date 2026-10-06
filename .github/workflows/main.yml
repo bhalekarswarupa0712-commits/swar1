@@ -1,18 +1,20 @@
-#pipelinename
+# pipeline name
 name: pipeline1
+
+# trigger
 on:
-    push:
-        branches:
-            - main:
+  push:
+    branches:
+      - main
 
-                jobs:
-                     print-hello:
-                         runs-on: ubuntu-latest
-                    steps:
-                        - name: print welcome message 
-                          run: echo "welcome to git actions"
+# jobs
+jobs:
+  print-hello:
+    runs-on: ubuntu-latest
 
-                        - name : print swarupa
-                          run:  echo "welcome to git actions"
-                    
+    steps:
+      - name: print welcome message
+        run: echo "welcome to git actions"
 
+      - name: print swarupa
+        run: echo "welcome to git actions"
